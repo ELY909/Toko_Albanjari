@@ -4,8 +4,8 @@
 
 ## Tampilan Website
 
-Berikut adalah tampilan website beserta gambarnya:
-
 ![Tampilan Website](screenShots/web/tampilan.png)
+
+## Sturktur
 
 ![Struktur Database](screenShots/struktur/auth_user.png)
