@@ -1,0 +1,82 @@
+{% load django_bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju Albanjari</title>
+    {% bootstrap_css %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Toko Baju Albanjari</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Selamat datang di Toko Baju Albanjari!</h1>
+            <p class="lead">Tempat terbaik untuk membeli baju berkualitas tinggi dengan harga terjangkau.</p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Belanja Sekarang</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'images/1.jpg' %}" class="card-img-top" alt="Baju 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Baju Kaos Devil May Cry</h5>
+                        <p class="card-text">menggunakan baju ini anda akan selalu termotivasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'images/2.jpg' %}" class="card-img-top" alt="Baju 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Baju Kemeja</h5>
+                        <p class="card-text">Baju ini cocok digunakan saat ke kampus atau berjalan - jalan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'images/3.jpg' %}" class="card-img-top" alt="Baju 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Baju jas</h5>
+                        <p class="card-text">Baju yang cocok digunakan untuk acara acara resmi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'images/4.jpg' %}" class="card-img-top" alt="Baju 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Baju Alok Free fire</h5>
+                        <p class="card-text">Jumshot BOSQU.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% bootstrap_javascript %}
+</body>
+</html>
