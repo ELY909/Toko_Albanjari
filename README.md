@@ -8,3 +8,4 @@ Berikut adalah tampilan website beserta gambarnya:
 
 ![Tampilan Website](screenShots/web/tampilan.png)
 
+![Struktur Database](screenShots/struktur/auth_user.png)
