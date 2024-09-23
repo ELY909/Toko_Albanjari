@@ -78,10 +78,15 @@ WSGI_APPLICATION = 'toko_baju_albanjari.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'store',  # Nama database yang telah dibuat di phpMyAdmin
+        'USER': 'root',   # User default MySQL di XAMPP
+        'PASSWORD': '',    # Biasanya password default di XAMPP kosong (tidak diisi)
+        'HOST': '127.0.0.1',  # Host MySQL di XAMPP (localhost)
+        'PORT': '3306',    # Port default MySQL
     }
 }
+
 
 
 # Password validation
