@@ -1,4 +1,4 @@
-##POSSTEST 1
+## POSSTEST 1
 **Nama:** Muhammad Arif Rachman  
 **NIM:** 2209106009
 
@@ -6,7 +6,7 @@
 
 ![Tampilan Website](screenShots/web/tampilan.png)
 
-##POSSTEST 2
+## POSSTEST 2
 ## Sturktur
 
 ![Struktur Database](screenShots/struktur/auth_user.png)
