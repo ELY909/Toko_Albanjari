@@ -1,4 +1,3 @@
-# Informasi Pribadi
 
 **Nama:** Muhammad Arif Rachman  
 **NIM:** 2209106009
@@ -7,5 +6,5 @@
 
 Berikut adalah tampilan website beserta gambarnya:
 
-![Tampilan Website](screenShots/web/website-tampilan.png)
+![Tampilan Website](screenShots/web/tampilan.png)
 
