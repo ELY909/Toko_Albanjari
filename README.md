@@ -15,3 +15,6 @@
 
 
 ## Seed Database
+![Struktur Database](screenShots/data/auth_permissions.png)
+![Struktur Database](screenShots/data/django_content_type.png)
+![Struktur Database](screenShots/data/django_migrations.png)
