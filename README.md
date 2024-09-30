@@ -7,7 +7,7 @@
 ![Tampilan Website](screenShots/web/tampilan.png)
 
 ## POSSTEST 2
-## Sturktur
+## Struktur
 
 ![Struktur Database](screenShots/struktur/auth_user.png)
 ![Struktur Database](screenShots/struktur/django_admin_log.png)
@@ -20,6 +20,7 @@
 ![Struktur Database](screenShots/data/django_migrations.png)
 
 ## POSSTEST 3
+## Aksi
+Setiap kali admin melakukan penambahan atau pengeditan data Customer di panel admin, ada proses otomatis yang berlangsung setelah data disimpan. Saat data Customer baru ditambahkan, sistem akan memeriksa apakah customer tersebut sudah memiliki Order sebelumnya. Jika customer tersebut belum memiliki pesanan sama sekali, sistem akan secara otomatis membuat satu Order baru untuk mereka.
 
-Saat admin menambahkan data pelanggan baru di panel admin, sistem akan memeriksa apakah pelanggan tersebut sudah memiliki pesanan.
-Jika pelanggan belum memiliki pesanan, maka sistem akan secara otomatis membuat pesanan pertama untuk pelanggan tersebut.
+Proses ini berjalan dengan sendirinya, sehingga admin tidak perlu menambahkan pesanan secara manual setiap kali ada customer baru. Jika customer yang disimpan adalah customer yang sudah ada (misalnya diperbarui), sistem tidak akan membuat Order baru lagi, karena pelanggan tersebut mungkin sudah memiliki pesanan sebelumnya.
