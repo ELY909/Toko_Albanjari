@@ -18,3 +18,8 @@
 ![Struktur Database](screenShots/data/auth_permissions.png)
 ![Struktur Database](screenShots/data/django_content_type.png)
 ![Struktur Database](screenShots/data/django_migrations.png)
+
+## POSSTEST 3
+
+Saat admin menambahkan data pelanggan baru di panel admin, sistem akan memeriksa apakah pelanggan tersebut sudah memiliki pesanan.
+Jika pelanggan belum memiliki pesanan, maka sistem akan secara otomatis membuat pesanan pertama untuk pelanggan tersebut.
