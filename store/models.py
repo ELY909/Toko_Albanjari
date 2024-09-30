@@ -1,5 +1,6 @@
-# models.py
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -34,3 +35,11 @@ class Order(models.Model):
 
     def __str__(self):
         return f"Order by {self.customer.name} on {self.order_date}"
+
+# Fungsi untuk membuat receipt secara otomatis ketika order dibuat
+@receiver(post_save, sender=Order)
+def create_receipt(sender, instance, created, **kwargs):
+    if created:
+        # Logika untuk membuat receipt
+        print(f"Receipt created for Order ID: {instance.id} by {instance.customer.name}")
+
